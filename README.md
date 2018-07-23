@@ -1,8 +1,6 @@
 # Software Branch
 
-This project is being served as a Github Page.
-
-It is viewable at http://chase439.github.io/softwarebranch
+This project is being served with Github Pages at http://chase439.github.io/softwarebranch
 
 DNS Config:
  - 1 "A" record was configured with 4 Github IP addresses
@@ -14,10 +12,13 @@ DNS Config:
    - CNAME records cannot be set for the root domain.
    - Also, the target of a CNAME record can only be a domain name; paths are not allowed.
 
+Github Config:
+ - Under Settings, set custom domain, which will create/modify CNAME file in repo.
+ 
 Github Page will automatically
  - provide https://
- - redirect www.example.com to example.com if your Github setting is example.com
- - redirect example.com to www.example.com if your Github setting is www.example.com
+ - redirect www.example.com to example.com if your Github custom domain setting is example.com
+ - redirect example.com to www.example.com if your Github custom domain setting is www.example.com
 
 References:
  - https://help.github.com/articles/setting-up-an-apex-domain/
