@@ -205,6 +205,7 @@ $(function() {
                     }
                 },
 
+		/*
                 // Use Ajax to send everything to processForm.php
                 submitHandler: function(form) {
                     $(form).ajaxSubmit({
@@ -216,6 +217,7 @@ $(function() {
                     });
                     return false;
                 }
+		*/
             });
         }
 
