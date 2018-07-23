@@ -684,6 +684,30 @@
                 });
         }
 		
+		if (settings['touchslide']) {
+			thisObj.touchwipe({
+				wipeUp: function () {
+					prev();
+				},
+				wipeDown: function () {
+					next();
+				}
+			});
+            thisObj.bind(
+                'ontouchstart',
+                function (event, delta) {
+                    if (thisEl.ready) {
+                        if (delta < 0) {
+                            next();
+                        }
+                        else {
+                            prev();
+                        }
+                    }
+                    return false;
+                });
+        }
+		
         if (! settings['statusbar'] || settings['ajax']) {
             thisEl.ready = true;
             thisEl.uslRefresh();
