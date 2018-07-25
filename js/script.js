@@ -228,10 +228,12 @@ $(function() {
             required: true,
             digits: true
           },
+          /*
           captcha: {
             required: true,
             range: [24, 24]
           }
+          */
         },
 
         // Specify what error messages to display
