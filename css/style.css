@@ -86,7 +86,7 @@ input[type="text"],textarea {
 	box-sizing: border-box;
 }
 .md-comingsoon {
-    font-family: 'Nixie One', cursive;
+    font-family: 'Nixie One';
     font-weight: normal;
     color: #FFF;
     width: 100%; 

@@ -82,7 +82,7 @@ $(function() {
                 modpath: 'twitter/',
                 count: 2,
                 loading_text: '<p>loading Tweet...</p>',
-                username: 'megadrupal',
+                username: 'appointmentcare',
                 template: '<small>{time}</small><p>{text}</p>'
             });
         }
