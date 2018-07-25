@@ -230,7 +230,7 @@ $(function() {
           },
           captcha: {
             required: true,
-            range: [14, 14]
+            range: [24, 24]
           }
         },
 
