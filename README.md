@@ -20,8 +20,9 @@ This project is being served with Github Pages at http://chase439.github.io/soft
  - redirect `www.example.com` to `example.com` if your Github custom domain setting is `example.com`
  - redirect `example.com` to `www.example.com` if your Github custom domain setting is `www.example.com`
 
-## Send email from static pages
-Instructions at https://formspree.io
+## Miscellaneous
+ - [Instructions to Send email from static pages](https://formspree.io)
+ - [Instructions to Embed Tweets](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview.html)
 
 ## References:
  - https://help.github.com/articles/setting-up-an-apex-domain/
