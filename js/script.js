@@ -61,26 +61,6 @@ $(function() {
     });
     $('#year').text(austDay.getFullYear());
 
-    /* TWITTER ---------------------------------------*/
-    if($('#tweets').length > 0) {
-      $("#tweets").bind("loaded", function() {
-        $("#tweets ul").cycle({
-          fx: 'fade',
-          timeout: 2000,
-          speed: 400,
-          slides: "> li"
-        });
-      });
-
-      $('#tweets').tweet({
-        modpath: 'twitter/',
-        count: 2,
-        loading_text: '<p>loading Tweet...</p>',
-        username: 'appointmentcare',
-        template: '<small>{time}</small><p>{text}</p>'
-      });
-    }
-
     /* BACKGROUND SLIDESHOW ----------------------------------*/
     // if($("#supersized-loader").length > 0) {
     //     $.supersized({
