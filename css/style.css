@@ -335,7 +335,12 @@ textarea {height: 120px; padding-top: 12px;}
          .md-confirm input {width: 80px; float: right; padding: 0 15px;}
 .md-offer-done {font-size: 40px; line-height: 120%; margin-top: 120px;}
 .md-domain .md-list-domain {margin-top: 45px;}
-.md-domain .md-list-domain p {font-size: 15px; font-family: 'Open Sans'; margin: 15px 0;}
+.md-domain .md-list-domain p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 15px 0;
+}
 
 
 /* FOLLOW STYLE 
