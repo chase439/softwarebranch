@@ -273,7 +273,7 @@ $(function() {
           _self.css({'margin-top': 0})
       });
 
-      if($mdBgImage.size() > 0) {
+      if($mdBgImage.length > 0) {
         var width = parseInt($mdBgImage.data("defW")),
           height = parseInt($mdBgImage.data("defH"));
         if(height > 0 && panelHeight > 0) {
@@ -306,11 +306,11 @@ $(function() {
       return {height: newImg.height, width: newImg.width};
     }
     var $mdBgImage = $(".md-bg-image img");
-    if($mdBgImage.size() > 0) {
-      var size = $mdBgImage.size(),
+    if($mdBgImage.length > 0) {
+      var size = $mdBgImage.length,
         i = 0;
       $mdBgImage.each(function() {
-        $(this).load(function() {
+        $(this).on('load', function() {
           if(!$(this).data('defW')) {
             i++;
             var dimensions = getImgSize($(this).attr("src"));
@@ -322,7 +322,7 @@ $(function() {
           }
         });
         if(this.complete) {
-          $(this).load();
+          $(this).trigger('load');
         }
       });
 
